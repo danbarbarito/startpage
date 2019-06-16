@@ -13,6 +13,7 @@ main {
 }
 
 .greeting-message-wrapper {
+  width: 100%;
   .greeting-message {
     position: relative;
     z-index: 10;
@@ -38,5 +39,47 @@ main {
     padding: 5px 20px;
     font-size: 20px;
     width: 100%;
+  }
+}
+
+.location-info {
+  min-height: 80px;
+  .city-info {
+    font-size: 36px;
+  }
+  .time-info {
+    font-size: 52px;
+  }
+}
+
+.weather-info {
+  border: 1px solid white;
+  padding: 15px;
+  min-height: 180px;
+
+  > div {
+    margin-bottom: 15px;
+  }
+
+
+  .temp-info {
+    >div:first-child {
+      font-size: 26px; 
+    }
+    >div {
+      font-size: 20px; 
+    }
+  }
+  
+  .weather-bullets {
+    h2 {
+      margin: 0;
+    }
+    .weather-bullet {
+      margin-left: 5px;
+      &:before {
+        content: '- ';
+      }
+    }
   }
 }

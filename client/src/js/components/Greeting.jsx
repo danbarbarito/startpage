@@ -8,9 +8,9 @@ var Greeting = {
     // Get message
     const hour = parseInt(moment().hour());
     let message;
-    if (hour < 12) {
+    if (hour > 4 && hour < 12) {
       message = "Good Morning";
-    } else if (hour < 18) {
+    } else if (hour >= 12 && hour < 17) {
       message = "Good Afternoon";
     } else {
       message = "Good Evening";

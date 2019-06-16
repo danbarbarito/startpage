@@ -70,3 +70,5 @@ pids
 client/dist
 
 TAGS
+
+startpage.conf

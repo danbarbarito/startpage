@@ -1,4 +1,4 @@
 {
   secrets => ['a73a286c256b1e378c16fa6488285f3845cf1a28'],
-  openweathermap => 'ff4b3f753499877451fa97c05194bc0f'
+  openweathermap => 'apikey'
 }

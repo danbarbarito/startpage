@@ -1,10 +1,13 @@
 const m = require("mithril");
 
 var SearchEngine = {
+  query: "",
   view: function(vnode) {
     return (
       <div className="fade-in-slide-right search-bar">
-        <input autofocus value={vnode.attrs.defaultValue} placeholder="Enter your Google search query" />
+        <form action="https://google.com/search">
+          <input name="q" autofocus placeholder="Enter your Google search query" />
+        </form>
       </div>
     )
   }

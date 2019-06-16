@@ -1,16 +1,14 @@
 const m = require("mithril");
 
-const Greeting = require("./Greeting.jsx");
 const SearchEngine = require("./SearchEngine.jsx");
-const LocationInfo = require("./LocationInfo.jsx");
+const LocationInfoRow = require("./LocationInfoRow.jsx");
 
 var App = {
   view: function() {
     return (
       <main>
-        <Greeting />
+        <LocationInfoRow />
         <SearchEngine />
-        <LocationInfo />
       </main>
     )
   }
