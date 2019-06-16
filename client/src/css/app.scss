@@ -1,10 +1,42 @@
+@import "./animations";
+
 body {
   background: black;
   color: white;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 main {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 25px 15px;
+}
+
+.greeting-message-wrapper {
+  .greeting-message {
+    position: relative;
+    z-index: 10;
+    font-weight: bold;
+    font-size: 60px;
+    cursor: pointer;
+    @media only screen and (max-width: 600px) {
+      font-size: 40px;
+    }
+  }
+}
+
+.search-bar {
+  margin-top: 20px;
+  padding: 10px;
+  input {
+    &::placeholder {
+      color: #aeaeae;
+      font-weight: 100;
+    }
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 20px;
+    width: 100%;
+  }
 }

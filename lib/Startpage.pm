@@ -1,6 +1,8 @@
 package Startpage;
 use Mojo::Base 'Mojolicious';
 
+use Geo::IP;
+
 # This method is used to send back the index.html file
 sub reply_with_index {
   my $c = shift;
@@ -24,6 +26,13 @@ sub startup {
   # Router
   my $r = $self->routes;
 
+  $r->get(
+    "/api/ip-info" => sub {
+      my $c = shift;
+
+      $c->render(json => {"ip" => []});
+    }
+  );
 
   # Re-route all index.html file
   $r->get("/" => sub { reply_with_index(@_) });

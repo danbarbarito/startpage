@@ -1,8 +1,5 @@
 const m = require("mithril");
 
-// Set <title> to the current time
-require('./titleTime');
+var App = require("./components/App.jsx");
 
-var MyComponent = require("./app.jsx");
-
-m.mount(document.body, MyComponent);
+m.mount(document.body, App);
