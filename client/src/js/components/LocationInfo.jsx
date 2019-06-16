@@ -24,7 +24,6 @@ var LocationInfo = {
         :
          <em></em>
         }
-        {console.log("Location", vnode.attrs.geolocation)}
       </div>
     )
   }

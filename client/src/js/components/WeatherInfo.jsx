@@ -48,6 +48,9 @@ var WeatherInfo = {
              <div>
                <strong>Visibility: </strong> {vnode.attrs.geolocation.visibility}
              </div>
+             <div>
+               <strong>Pressure: </strong> {vnode.attrs.geolocation.main.pressure}
+             </div>
            </div>
          </div>
         :
