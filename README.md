@@ -16,3 +16,5 @@
 5. `cp startpage.conf.template startpage.conf`
 6. Modify `startpage.conf` to fit your needs
 7. In the root folder, run `morbo script/startpage` to run the server
+
+![Screenshot](https://raw.githubusercontent.com/danielbarbarito/startpage/master/screenshot.png) 
