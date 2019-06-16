@@ -1,4 +1,5 @@
 {
   secrets => ['a73a286c256b1e378c16fa6488285f3845cf1a28'],
+  hypnotoad => { listen => [ 'http://*:6666' ] },
   openweathermap => 'apikey'
 }
