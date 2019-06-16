@@ -1,0 +1,9 @@
+[Unit]
+Description=Startpage
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/hypnotoad -f <path_to_startpage>/script/startpage
+
+[Install]
+WantedBy=multi-user.target

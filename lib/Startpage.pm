@@ -3,8 +3,6 @@ use Mojo::Base 'Mojolicious';
 
 use Startpage::Services::OpenWeatherMap;
 
-use Geo::IP;
-
 # This method is used to send back the index.html file
 sub reply_with_index {
   my $c = shift;
