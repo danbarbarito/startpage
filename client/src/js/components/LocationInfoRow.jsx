@@ -27,12 +27,12 @@ var LocationInfoRow = {
   },
   view: function(vnode) {
     return (
-      <div className="row">
-        <div class="col-lg-8">
+      <div id="location-info-row" className="row">
+        <div class="col-md-8">
           <Greeting />
           <LocationInfo geolocation={this.geolocation} />
         </div>
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <WeatherInfo geolocation={this.geolocation} />
         </div>
       </div>

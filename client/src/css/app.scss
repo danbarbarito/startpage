@@ -83,3 +83,15 @@ main {
     }
   }
 }
+
+#location-info-row {
+  > div {
+    margin-bottom: 20px !important;
+  }
+  @media only screen and (max-width: 64em) {
+    text-align: center;
+    > div {
+      margin: 0 auto;
+    }
+  }
+}
